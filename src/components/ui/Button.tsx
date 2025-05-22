@@ -26,7 +26,7 @@ const Button = ({
           variant === "secondary"
             ? "bg-white border border-[#07567F] text-blue"
             : "bg-primary-orange"
-        } text-white px-6 py-2.5 rounded-full font-semibold ${className}`}
+        } text-white px-6 pt-3 pb-2.5 rounded-full font-semibold ${className}`}
       >
         {icon && icon}
         {label}
