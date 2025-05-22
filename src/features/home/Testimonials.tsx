@@ -174,7 +174,7 @@ const Testimonials = () => {
           >
             <div className="flex flex-col items-center">
               <p className="text-2xl text-center text-secondary-black mb-10 font-light max-w-[700px]">
-                {`"{testimonials[currentIndex].quote}"`}
+                {`"${testimonials[currentIndex].quote}"`}
               </p>
 
               <div className="mb-6">
