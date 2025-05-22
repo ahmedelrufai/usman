@@ -1,17 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const polysans = localFont({
+  src: [
+    {
+      path: "../../public/fonts/polysans/polysanstrial-neutral.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/polysans/polysanstrial-slim.otf",
+      weight: "300",
+      style: "light",
+    },
+  ],
+  variable: "--font-polysans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,30 +29,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${polysans.variable} font-sans antialiased`}>
         <Head>
           <title>Arjun Global Services</title>
           <meta name="description" content="Arjun Global Services website" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
         <Navbar />
         {children}
-        <footer className="bg-gray-50 mt-12 py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-center text-gray-500">
-              © {new Date().getFullYear()} Arjun Global Services. All rights
-              reserved.
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { CgArrowRight } from "react-icons/cg";
@@ -30,7 +29,7 @@ const HeroSection = () => {
               New
             </span>
             <span className="text-primary-black text-sm mr-2">
-              We've just added new jobs
+              {"We've just added new jobs"}
             </span>
             <CgArrowRight size={24} className="text-primary-black" />
           </div>
@@ -38,10 +37,10 @@ const HeroSection = () => {
 
         {/* Main Headline */}
         <h1
-          className={`text-4xl md:text-5xl lg:text-[55px] font-bold text-primary-black max-w-4xl mx-auto transition-all duration-700 ${
+          className={`text-3xl md:text-5xl lg:text-[55px] font-medium text-primary-black max-w-4xl mx-auto transition-all duration-700 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
-          style={{ transitionDelay: "200ms" }}
+          style={{ transitionDelay: "100ms" }}
         >
           Helping You Move,
           <br className="hidden sm:block" />
@@ -50,10 +49,10 @@ const HeroSection = () => {
 
         {/* Subheading */}
         <p
-          className={`mt-6 text-xl text-secondary-black max-w-3xl mx-auto transition-all duration-700 font-light ${
+          className={`mt-6 text-xl max-sm:text-sm max-sm:mt-3 text-secondary-black max-w-3xl mx-auto transition-all duration-700 font-light ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
-          style={{ transitionDelay: "400ms" }}
+          style={{ transitionDelay: "300ms" }}
         >
           One trusted team for all your travel, work, housing, and <br />{" "}
           logistics needs.
@@ -64,18 +63,20 @@ const HeroSection = () => {
           className={`mt-7 flex flex-col sm:flex-row justify-center gap-4 transition-all duration-700 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
-          style={{ transitionDelay: "600ms" }}
+          style={{ transitionDelay: "500ms" }}
         >
           <Button
             label="Get a Free Consultation"
             onClick={() => router.push("/")}
             hideOnMobile={false}
+            className="max-sm:mx-auto"
           />
           <Button
             variant="secondary"
             label="Explore Services"
             onClick={() => router.push("/")}
             hideOnMobile={false}
+            className="max-sm:mx-auto"
           />
         </div>
 
@@ -84,13 +85,13 @@ const HeroSection = () => {
           className={`mt-10 flex flex-row justify-center items-center gap-8 transition-all duration-700 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
-          style={{ transitionDelay: "800ms" }}
+          style={{ transitionDelay: "700ms" }}
         >
           <div className="flex -space-x-3">
             {[1, 2, 3, 4, 5].map((i) => (
               <div
                 key={i}
-                className="h-10 w-10 rounded-full overflow-hidden border-2 border-white shadow-md"
+                className="h-10 w-10 max-sm:h-8 max-sm:w-8 rounded-full overflow-hidden border-2 border-white shadow-md"
                 style={{
                   transform: `translateX(${(i - 3) * 5}px)`,
                   zIndex: 6 - i,
@@ -100,14 +101,13 @@ const HeroSection = () => {
                 <Image
                   src={`/images/hero/expert-${i}.png`}
                   alt={`Expert ${i}`}
-                  width={40}
-                  height={40}
+                  fill
                   className="h-full w-full object-cover"
                 />
               </div>
             ))}
           </div>
-          <p className="text-secondary-black text-xl font-light">
+          <p className="text-secondary-black text-xl font-light max-sm:text-sm">
             Trusted by top experts.
           </p>
         </div>

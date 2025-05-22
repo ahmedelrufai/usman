@@ -46,10 +46,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full py-10 px-6 bg-white">
+    <nav className="w-full py-10 px-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className={`flex items-center`}>
+        <Link href="/" className={`flex items-center`}>
           <Image
             src="/images/logo.png"
             alt="Arjun Global Services"
@@ -59,7 +59,7 @@ const Navbar = () => {
             priority
             style={{ height: "auto", width: "100%" }}
           />
-        </a>
+        </Link>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">

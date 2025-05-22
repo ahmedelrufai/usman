@@ -6,63 +6,44 @@ import { useState, useEffect, useRef } from "react";
 interface Location {
   id: number;
   name: string;
-  country: string;
   image: string;
-  description: string;
 }
 
 const initialLocations: Location[] = [
   {
     id: 1,
-    name: "St. Stephen",
-    country: "Hungary",
+    name: "Matthias Church and the statue of Stephen I of Hungary",
     image: `https://picsum.photos/500/300`,
-    description:
-      "Historic cathedral and architectural beauty in Eastern Europe.",
   },
   {
     id: 2,
-    name: "Moraine Lake",
-    country: "Canada",
+    name: "Moraine Lake, in Banff National Park",
     image: `https://picsum.photos/501/300`,
-    description: "Stunning turquoise waters in Banff National Park, Alberta.",
   },
   {
     id: 3,
-    name: "Oregon Coast",
-    country: "USA",
+    name: "Oregon Coast (USA)",
     image: `https://picsum.photos/502/300`,
-    description:
-      "Dramatic coastlines with rocky formations and peaceful beaches.",
   },
   {
     id: 4,
-    name: "Forbidden City",
-    country: "China",
+    name: "Hongong China",
     image: `https://picsum.photos/503/300`,
-    description:
-      "Imperial palace complex showcasing traditional Chinese architecture.",
   },
   {
     id: 5,
-    name: "Santorini",
-    country: "Greece",
+    name: "Oregon Coast (USA)",
     image: `https://picsum.photos/504/300`,
-    description: "Iconic white-washed buildings overlooking the Aegean Sea.",
   },
   {
     id: 6,
-    name: "Kyoto",
-    country: "Japan",
+    name: "Kyoto Japan",
     image: `https://picsum.photos/505/300`,
-    description:
-      "Ancient temples and traditional gardens reflecting Japanese heritage.",
   },
 ];
 
 export default function Locations() {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(true);
+  const [isScrolling] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number | null>(null);
 
@@ -71,10 +52,6 @@ export default function Locations() {
     ...initialLocations,
     ...initialLocations,
   ];
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -125,7 +102,7 @@ export default function Locations() {
       key={`${location.id}-${index}`}
       className="flex-shrink-0 w-[300px] md:w-[500px] mx-2 cursor-pointer transition-all duration-500"
     >
-      <div className="bg-white overflow-hidden h-full">
+      <div className="overflow-hidden h-full">
         <Image
           src={location.image}
           alt={location.name}
@@ -144,8 +121,8 @@ export default function Locations() {
   return (
     <div className="max-w-full py-6 overflow-hidden">
       <div className="relative transition-opacity duration-1000">
-        <div className="absolute left-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-r from-indigo-50 to-transparent z-10 h-[300px]"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-12 md:w-24 bg-gradient-to-l from-indigo-50 to-transparent z-10 h-[300px]"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-6 md:w-24 bg-gradient-to-r from-indigo-50 to-transparent z-10 h-[300px]"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-6 md:w-24 bg-gradient-to-l from-indigo-50 to-transparent z-10 h-[300px]"></div>
 
         <div
           ref={scrollRef}
