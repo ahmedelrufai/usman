@@ -15,7 +15,17 @@ const polysans = localFont({
     {
       path: "../../public/fonts/polysans/polysanstrial-slim.otf",
       weight: "300",
-      style: "light",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/polysans/polysansitalictrial-neutralitalic.otf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/polysans/polysansitalictrial-slimitalic.otf",
+      weight: "300",
+      style: "italic",
     },
   ],
   variable: "--font-polysans",
