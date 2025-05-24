@@ -90,7 +90,11 @@ const Navbar = () => {
 
           <div className="relative" ref={servicesRef}>
             <button
-              className="flex items-center text-secondary-black font-medium cursor-pointer"
+              className={`${
+                pathname.split("/")[1] === "services"
+                  ? "text-primary-black border-b-2 border-b-[#07567F]"
+                  : "text-secondary-black"
+              } flex items-center text-secondary-black font-medium cursor-pointer`}
               onClick={() => setIsServicesOpen(!isServicesOpen)}
             >
               Services <ChevronDown className="ml-1 h-4 w-4" />

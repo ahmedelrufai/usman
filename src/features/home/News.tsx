@@ -25,8 +25,8 @@ const NewsCard: React.FC<NewsCardProps> = ({
   return (
     <motion.article
       className="rounded-2xl overflow-hidden transition-all duration-300"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
