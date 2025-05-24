@@ -3,7 +3,7 @@ import React from "react";
 type Props = {
   label: string;
   className?: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "blue";
   size?: "small" | "medium" | "large";
   onClick?: () => void;
   icon?: React.ReactNode;
@@ -16,7 +16,7 @@ const Button = ({
   label,
   variant = "primary",
   className = "",
-  hideOnMobile = true,
+  hideOnMobile = false,
 }: Props) => {
   return (
     <div className={`${hideOnMobile ? "hidden md:block" : ""}`}>
@@ -25,6 +25,8 @@ const Button = ({
         className={`flex items-center cursor-pointer ${
           variant === "secondary"
             ? "bg-white border border-[#07567F] text-blue"
+            : variant === "blue"
+            ? "bg-blue"
             : "bg-primary-orange"
         } text-white px-6 pt-3 pb-2.5 rounded-full font-semibold ${className}`}
       >
