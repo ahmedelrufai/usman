@@ -2,7 +2,7 @@
 
 import Container from "@/components/Container";
 import Button from "@/components/ui/Button";
-import OrangeButton from "@/components/ui/OrangeButton";
+import SecondaryButton from "@/components/ui/SecondaryButton";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
@@ -17,7 +17,7 @@ const HeroSection = () => {
         transition={{ duration: 0.6 }}
         className="flex flex-col max-w-[900px] items-center mx-auto gap-8 sm:mt-15"
       >
-        <OrangeButton label="Job Offers Abroad" />
+        <SecondaryButton label="Job Offers Abroad" />
         <Title>Find Work Opportunities Around the World</Title>
         <p className="text-sm sm:text-xl font-light text-center text-secondary-black">
           Looking to build a better future in a new country? ARJUN GLOBAL
