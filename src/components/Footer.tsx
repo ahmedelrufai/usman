@@ -33,7 +33,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-50 pt-16 pb-8">
+    <footer className="pt-16 pb-8">
       <Container>
         <motion.div
           className="mb-16"

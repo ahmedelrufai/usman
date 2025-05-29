@@ -23,6 +23,15 @@ button {
   cursor: pointer;
 }
 
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 .text-primary-orange {
   color: #ffa704;
 }

@@ -1,7 +1,14 @@
+import ContactUs from "@/features/home/ContactUs";
+import FAQ from "@/features/home/FAQs";
 import React from "react";
 
-const FAQs = () => {
-  return <div>FAQs</div>;
+const FAQsPage = () => {
+  return (
+    <div>
+      <FAQ />
+      <ContactUs />
+    </div>
+  );
 };
 
-export default FAQs;
+export default FAQsPage;
