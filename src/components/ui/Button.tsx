@@ -8,6 +8,7 @@ type Props = {
   onClick?: () => void;
   icon?: React.ReactNode;
   hideOnMobile?: boolean;
+  disabled?: boolean;
 };
 
 const Button = ({
@@ -16,11 +17,13 @@ const Button = ({
   label,
   variant = "primary",
   className = "",
+  disabled,
   hideOnMobile = false,
 }: Props) => {
   return (
     <div className={`${hideOnMobile ? "hidden md:block" : ""}`}>
       <button
+        disabled={disabled}
         onClick={onClick}
         className={`flex items-center cursor-pointer ${
           variant === "secondary"

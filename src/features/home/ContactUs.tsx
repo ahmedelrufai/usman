@@ -13,6 +13,11 @@ const ContactUs = () => {
     acceptTerms: false,
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -25,9 +30,42 @@ const ContactUs = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        // Reset form after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          acceptTerms: false,
+        });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -56,6 +94,19 @@ const ContactUs = () => {
             </p>
           </div>
 
+          {/* Status messages */}
+          {submitStatus === "success" && (
+            <div className="mb-6 p-4 bg-green-100 border border-green-300 text-green-700 rounded-lg text-center">
+              Thank you! Your message has been sent successfully.
+            </div>
+          )}
+
+          {submitStatus === "error" && (
+            <div className="mb-6 p-4 bg-red-100 border border-red-300 text-red-700 rounded-lg text-center">
+              Sorry, there was an error sending your message. Please try again.
+            </div>
+          )}
+
           <form
             onSubmit={handleSubmit}
             className="space-y-6 max-w-[500px] mx-auto"
@@ -75,6 +126,7 @@ const ContactUs = () => {
                 onChange={handleInputChange}
                 className="w-full px-6 py-3 border border-gray-200 rounded-[40px] text-base focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent"
                 required
+                disabled={isSubmitting}
               />
             </div>
 
@@ -93,6 +145,7 @@ const ContactUs = () => {
                 onChange={handleInputChange}
                 className="w-full px-6 py-3 border border-gray-200 rounded-[40px] text-base focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent"
                 required
+                disabled={isSubmitting}
               />
             </div>
 
@@ -112,6 +165,7 @@ const ContactUs = () => {
                 rows={6}
                 className="w-full px-6 py-3 border border-gray-200 rounded-[40px] text-base focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent"
                 required
+                disabled={isSubmitting}
               />
             </div>
 
@@ -124,6 +178,7 @@ const ContactUs = () => {
                 onChange={handleInputChange}
                 className="w-4 h-4 text-blue bg-gray-100 rounded-full"
                 required
+                disabled={isSubmitting}
               />
               <label
                 htmlFor="acceptTerms"
@@ -136,7 +191,12 @@ const ContactUs = () => {
             </div>
 
             <div className="flex justify-center pt-4">
-              <Button label="Submit" hideOnMobile={false} className="px-10" />
+              <Button
+                label={isSubmitting ? "Sending..." : "Submit"}
+                hideOnMobile={false}
+                className="px-10"
+                disabled={isSubmitting}
+              />
             </div>
           </form>
         </motion.div>
