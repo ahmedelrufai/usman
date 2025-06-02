@@ -11,7 +11,7 @@ const HeroSection = () => {
     <div className="relative">
       <div className="aspect-[1000/500] max-sm:aspect-[1000/800] relative overflow-hidden w-full z-0">
         <Image
-          src="/images/car-rentals/hero.png"
+          src="/images/ticketing/hero.png"
           alt="Hero"
           fill
           className="object-cover max-md:hidden"
