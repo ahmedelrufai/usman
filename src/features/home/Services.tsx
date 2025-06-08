@@ -68,7 +68,7 @@ const Services = () => {
 
   return (
     <Container>
-      <div className="py-16">
+      <div className="py-16" id="our-services">
         <div className="mx-auto">
           <div className="text-center mb-20">
             <div className="inline-block px-6 py-2 bg-blue text-white rounded-full text-sm font-medium mb-6">

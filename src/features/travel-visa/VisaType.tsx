@@ -65,7 +65,7 @@ const VisaType = () => {
 
   return (
     <Container>
-      <div className="py-16 sm:mt-10">
+      <div className="py-16 sm:mt-10" id="our-services">
         <div className="mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-4xl font-medium text-primary-black mb-6">

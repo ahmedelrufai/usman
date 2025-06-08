@@ -7,6 +7,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { FaWhatsapp } from "react-icons/fa";
 import Button from "./ui/Button";
+import { redirectToWhatsApp } from "@/helper";
 
 const Navbar = () => {
   const router = useRouter();
@@ -194,7 +195,7 @@ const Navbar = () => {
         {/* Contact Us Button */}
         <Button
           label="Contact Us"
-          onClick={() => router.push("/contact")}
+          onClick={redirectToWhatsApp}
           icon={<FaWhatsapp className="mr-2" size={20} />}
           hideOnMobile={true}
         />

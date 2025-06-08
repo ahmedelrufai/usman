@@ -17,11 +17,11 @@ const Footer = () => {
 
   const companyLinks = [
     { label: "Home", href: "/" },
-    { label: "Our Services", href: "/services" },
+    { label: "Our Services", href: "#our-services" },
   ];
 
   const resourceLinks = [
-    { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "/" },
     { label: "Relocation Guide", href: "/relocation-guide" },
     { label: "Youtube", href: "#" },
   ];
@@ -124,13 +124,18 @@ const Footer = () => {
                   Contact Us
                 </h3>
                 <div className="space-y-3 text-primary-black text-sm">
-                  <p>+256 757 940 605</p>
-                  <p>support@Arjunservices.com</p>
+                  <p>
+                    +234 808 519 9777 <br /> +(256) 0757 940 605
+                  </p>
+                  <p>info@arjunservices.com</p>
                   <p>Office Hour: 8AM - 11PM</p>
                   <p>
-                    1Suite G-19, Arua Park Mall,
+                    G-19 Arua Park Mall, Central Town
                     <br />
-                    Kampala City, Uganda
+                    Kampala, Uganda.
+                    <br />
+                    Suite A06 Flomax Plaza, Franca <br /> Afegbua Crescent
+                    Abuja, Nigeria.
                   </p>
                 </div>
               </div>

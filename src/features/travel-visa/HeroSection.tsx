@@ -149,7 +149,7 @@ const HeroSection = () => {
               <Button
                 variant="secondary"
                 label="Explore Services"
-                onClick={() => router.push("/")}
+                onClick={() => router.push("/#our-services")}
                 hideOnMobile={false}
                 className="sm:w-auto max-sm:mx-auto"
               />

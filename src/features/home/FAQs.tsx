@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
+import { redirectToWhatsApp } from "@/helper";
 
 type FAQItemProps = {
   question: string;
@@ -104,7 +105,11 @@ const FAQ = () => {
             <p className="text-secondary-black text-xl max-w-2xl font-light">
               Clear answers to help you get started with confidence.
             </p>
-            <Button label="Contact" hideOnMobile={false} />
+            <Button
+              label="Contact"
+              hideOnMobile={false}
+              onClick={redirectToWhatsApp}
+            />
           </div>
 
           <div className="flex-4 max-w-3xl mx-auto">
