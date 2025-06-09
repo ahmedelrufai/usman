@@ -116,6 +116,9 @@ const VisaPlan = () => {
             <Button
               hideOnMobile={false}
               label={"Get Started Now"}
+              onClick={() =>
+                window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+              }
               className="py-3.5 px-10 border-2 border-[#ffa704]"
             />
           </div>

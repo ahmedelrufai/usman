@@ -109,6 +109,7 @@ const HeroSection = () => {
             variants={badgeVariants}
             whileHover="hover"
             whileTap={{ scale: 0.98 }}
+            onClick={() => router.push("/services/job-offers")}
           >
             <motion.span
               className="text-white text-sm font-semibold bg-blue rounded-full px-3 py-1 mr-2"
@@ -183,7 +184,9 @@ const HeroSection = () => {
           >
             <Button
               label="Get a Free Consultation"
-              onClick={() => router.push("/")}
+              onClick={() =>
+                window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+              }
               hideOnMobile={false}
               className="max-sm:mx-auto"
             />

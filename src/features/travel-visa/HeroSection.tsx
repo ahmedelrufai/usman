@@ -135,7 +135,12 @@ const HeroSection = () => {
             >
               <Button
                 label="Get a Free Consultation"
-                onClick={() => router.push("/")}
+                onClick={() =>
+                  window.open(
+                    "https://survey.zohopublic.com/zs/uDCIrB",
+                    "_blank"
+                  )
+                }
                 hideOnMobile={false}
                 className="sm:w-auto max-sm:mx-auto"
               />

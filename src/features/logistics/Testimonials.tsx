@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef, TouchEvent } from "react";
 import Container from "@/components/Container";
 import Image from "next/image";
+import { testimonials } from "../home/Testimonials";
 
 type TestimonialProps = {
   quote: string;
@@ -10,44 +11,6 @@ type TestimonialProps = {
   location: string;
   image: string;
 };
-
-const testimonials: TestimonialProps[] = [
-  {
-    quote:
-      "ARJUN GLOBAL helped me land a job in Dubai and handled my entire visa process. Smooth and stress-free!",
-    name: "David M.",
-    location: "Canada",
-    image: "/images/avatar.png",
-  },
-  {
-    quote:
-      "Their real estate team found me the perfect apartment in London within my budget. Exceptional service!",
-    name: "Sarah K.",
-    location: "Australia",
-    image: "/images/avatar.png",
-  },
-  {
-    quote:
-      "The logistics support for my business shipment was flawless. On-time delivery with complete transparency.",
-    name: "Raj P.",
-    location: "India",
-    image: "/images/avatar.png",
-  },
-  {
-    quote:
-      "My student visa application was complicated, but they guided me through every step. Now I'm studying in Canada!",
-    name: "Mei L.",
-    location: "China",
-    image: "/images/avatar.png",
-  },
-  {
-    quote:
-      "Their car rental service during my Dubai trip was excellent. Clean vehicles and responsive customer support.",
-    name: "John T.",
-    location: "USA",
-    image: "/images/avatar.png",
-  },
-];
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

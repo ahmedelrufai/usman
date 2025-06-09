@@ -4,6 +4,7 @@ import Container from "@/components/Container";
 import Button from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type NewsCardProps = {
   image: string;
@@ -67,6 +68,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
 };
 
 const News = () => {
+  const router = useRouter();
   const newsArticles = [
     {
       image: "https://picsum.photos/800/600",
@@ -137,6 +139,9 @@ const News = () => {
             <Button
               hideOnMobile={false}
               label=" Get a Free Quote"
+              onClick={() =>
+                window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+              }
               className="py-3.5 px-10 border-2 border-[#ffa704]"
             />
 
