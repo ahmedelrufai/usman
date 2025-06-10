@@ -145,7 +145,7 @@ export default function JobBoard() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-3 rounded-2xl text-sm font-medium transition-all duration-200 ${
+                  className={`px-3.5 py-2 md:px-6 md:py-3 rounded-2xl text-sm font-medium transition-all duration-200 ${
                     selectedCategory === category
                       ? "bg-orange-400 text-white"
                       : "text-secondary-black  border border-gray-200 hover:border-gray-300"
