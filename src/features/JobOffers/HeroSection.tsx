@@ -7,8 +7,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 import Title from "@/components/ui/Title";
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <Container>
       <motion.div
@@ -26,7 +29,12 @@ const HeroSection = () => {
           Canada, Europe, or elsewhere — we make the process smooth, fast, and
           stress-free.
         </p>
-        <Button label="Browse Jobs" variant="blue" className="px-16" />
+        <Button
+          label="Browse Jobs"
+          variant="blue"
+          className="px-16"
+          onClick={() => router.push("/jobs")}
+        />
       </motion.div>
 
       <motion.div

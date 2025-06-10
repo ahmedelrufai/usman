@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { motion } from "framer-motion";
+import { redirectToWhatsApp } from "@/helper";
 
 const HeroSection = () => {
   const router = useRouter();
@@ -124,7 +125,9 @@ const HeroSection = () => {
             >
               <Button
                 label="Talk to Us"
-                onClick={() => router.push("/")}
+                onClick={() => {
+                  redirectToWhatsApp();
+                }}
                 hideOnMobile={false}
                 className="sm:w-auto max-sm:mx-auto"
               />

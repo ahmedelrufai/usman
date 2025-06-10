@@ -22,6 +22,9 @@ const FreeConsultaion = () => {
             <Button
               hideOnMobile={false}
               label={"Book a Free Consultation"}
+              onClick={() =>
+                window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+              }
               className="py-3.5 px-10 border-2 border-[#ffa704]"
             />
           </div>

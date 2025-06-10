@@ -3,6 +3,7 @@
 import Button from "@/components/ui/Button";
 import SecondaryButton from "@/components/ui/SecondaryButton";
 import Title from "@/components/ui/Title";
+import { redirectToWhatsApp } from "@/helper";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -21,7 +22,12 @@ const HeroSection = () => {
             Getting started with ARJUN GLOBAL SERVICES is easy. Just follow
             these simple steps.
           </p>
-          <Button label="Talk to an Agent" />
+          <Button
+            label="Talk to an Agent"
+            onClick={() => {
+              redirectToWhatsApp();
+            }}
+          />
         </div>
       </motion.div>
     </div>

@@ -181,7 +181,20 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/become-an-agent"
+            href="/about-us"
+            className={`${
+              pathname === "/aboout-us"
+                ? "text-primary-black border-b-2 border-b-[#07567F]"
+                : "text-secondary-black"
+            } font-medium`}
+          >
+            About us
+          </Link>
+
+          <button
+            onClick={() =>
+              window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+            }
             className={`${
               pathname === "/become-an-agent"
                 ? "text-primary-black border-b-2 border-b-[#07567F]"
@@ -189,7 +202,7 @@ const Navbar = () => {
             } font-medium`}
           >
             Become an Agent
-          </Link>
+          </button>
         </div>
 
         {/* Contact Us Button */}

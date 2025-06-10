@@ -6,6 +6,7 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Button from "@/components/ui/Button";
+import { redirectToWhatsApp } from "@/helper";
 
 const WhyUs: React.FC = () => {
   const ref = useRef(null);
@@ -287,7 +288,13 @@ const WhyUs: React.FC = () => {
           </motion.div>
         </div>
       </motion.div>
-      <Button label="Talk to a Logistics Expert" className="mx-auto" />
+      <Button
+        label="Talk to a Logistics Expert"
+        className="mx-auto"
+        onClick={() => {
+          redirectToWhatsApp();
+        }}
+      />
     </Container>
   );
 };

@@ -5,6 +5,7 @@ import Button from "@/components/ui/Button";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { redirectToWhatsApp } from "@/helper";
 
 const steps = [
   {
@@ -41,7 +42,7 @@ const steps = [
     subTitle:
       "We keep you updated throughout the process. You'll always know what's happening next.",
     tagline: "Updates via email, WhatsApp, or your dashboard.",
-    action: "Get started",
+    action: "Talk to an advisor",
   },
   {
     id: "5",
@@ -199,7 +200,12 @@ const Steps = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Button label={item.action} />
+                    <Button
+                      label={item.action}
+                      onClick={() => {
+                        redirectToWhatsApp();
+                      }}
+                    />
                   </motion.div>
                 </div>
               </motion.div>

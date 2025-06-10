@@ -2,6 +2,7 @@
 
 import Container from "@/components/Container";
 import Button from "@/components/ui/Button";
+import { redirectToWhatsApp } from "@/helper";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -145,7 +146,12 @@ const News = () => {
               className="py-3.5 px-10 border-2 border-[#ffa704]"
             />
 
-            <button className="px-10 py-3.5 border-2 border-white text-white rounded-full font-medium transition-all duration-300 min-w-48">
+            <button
+              className="px-10 py-3.5 border-2 border-white text-white rounded-full font-medium transition-all duration-300 min-w-48"
+              onClick={() => {
+                redirectToWhatsApp();
+              }}
+            >
               Talk to an Expert
             </button>
           </div>

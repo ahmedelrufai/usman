@@ -6,8 +6,10 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 
 const HowItWorks: React.FC = () => {
+  const router = useRouter();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -291,6 +293,7 @@ const HowItWorks: React.FC = () => {
           <Button
             variant="blue"
             hideOnMobile={false}
+            onClick={() => router.push("/jobs")}
             label={"Browse Open Jobs"}
           />
         </div>

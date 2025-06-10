@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 import Title from "@/components/ui/Title";
+import { redirectToWhatsApp } from "@/helper";
 
 const HeroSection = () => {
   return (
@@ -30,7 +31,12 @@ const HeroSection = () => {
           apartments to overseas opportunities, our experienced agents help you
           every step of the way transparently and affordably
         </p>
-        <Button label="Get Personalised Assistance" />
+        <Button
+          label="Get Personalised Assistance"
+          onClick={() => {
+            redirectToWhatsApp();
+          }}
+        />
       </motion.div>
 
       {/* Image positioned 100px higher to overlap with content */}

@@ -288,7 +288,13 @@ const Highlights: React.FC = () => {
           </motion.div>
         </div>
       </motion.div>
-      <Button label="Book Your Ticket Now" className="mx-auto" />
+      <Button
+        label="Book Your Ticket Now"
+        className="mx-auto"
+        onClick={() =>
+          window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+        }
+      />
     </Container>
   );
 };

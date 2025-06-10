@@ -3,6 +3,7 @@
 import Button from "@/components/ui/Button";
 import SecondaryButton from "@/components/ui/SecondaryButton";
 import Title from "@/components/ui/Title";
+import { redirectToWhatsApp } from "@/helper";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -31,7 +32,12 @@ const HeroSection = () => {
             help you find the best deals with zero hassle. Let us handle the
             booking so you can focus on the journey ahead.
           </p>
-          <Button label="Get Personalised Assistance" />
+          <Button
+            label="Get Personalised Assistance"
+            onClick={() => {
+              redirectToWhatsApp();
+            }}
+          />
         </div>
       </motion.div>
     </div>

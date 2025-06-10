@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "title": "Hotel Maid",
+    "location": "BELGRADE",
+    "category": "Hospitality",
+    "type": "FULL-TIME",
+    "salary": "€11,500 - €12,500/year",
+    "schedule": "Permanent | Monday-Friday (Day shifts) Weekend availability required",
+    "benefits": "Free meals, free accommodation",
+    "featured": false
+  },
+  {
+    "id": 2,
+    "title": "Technical Cleaner / Handyman",
+    "location": "SERBIA",
+    "category": "Construction",
+    "type": "FULL-TIME",
+    "salary": "From €7.02/hour",
+    "schedule": "12-hour night shifts, flexible",
+    "jobType": "Permanent",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Paint Shop Worker",
+    "location": "SERBIA",
+    "category": "Construction",
+    "type": "FULL-TIME",
+    "salary": "€12,000 - €13,000/year",
+    "schedule": "Monday-Friday, 06:00-15:00 (Overtime available)",
+    "jobType": "Permanent",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Gardeners",
+    "location": "DENMARK",
+    "category": "Construction",
+    "type": "CONTRACT",
+    "salary": "2500 - 3200 EURO PER MONTH",
+    "duration": "6MONTHS - 2 YEARS",
+    "processingTime": "3 - 4 MONTHS",
+    "visaType": "VISA D TYPE (THE DUR...)",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Warehouses Workers",
+    "location": "DENMARK",
+    "category": "Construction",
+    "type": "FULL-TIME",
+    "salary": "2500 - 3200 EURO PER MONTH",
+    "duration": "6MONTHS - 2 YEARS",
+    "processingTime": "3 - 4 MONTHS",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Chicken Farms Workers",
+    "location": "GERMANY",
+    "category": "Construction",
+    "type": "FULL-TIME",
+    "salary": "13 - 13.5 EURO PER HOUR (PAID MONTHLY)",
+    "visaType": "180 DAYS Visa D TYPE...",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Packers",
+    "location": "DENMARK",
+    "category": "Construction",
+    "type": "CONTRACT",
+    "salary": "2500 - 3200 EURO PER MONTH",
+    "duration": "6MONTHS - 2 YEARS",
+    "processingTime": "3 - 4 MONTHS",
+    "visaType": "VISA D TYPE (THE DUR...)",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "Cafe & Restaurant Workers",
+    "location": "DENMARK",
+    "category": "Hospitality",
+    "type": "FULL-TIME",
+    "salary": "3500 - 3800 EURO PER MONTH",
+    "duration": "6MONTHS - 2 YEARS",
+    "processingTime": "3 - 4 MONTHS",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Welder",
+    "location": "POLAND",
+    "category": "Engineering",
+    "type": "FULL-TIME",
+    "salary": "5400-5900 PLN (NET)",
+    "duration": "1-3 Years",
+    "processingTime": "75 - 90 Working Days",
+    "visaType": "Initial Work visa One year",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "Packaging (Meat Factory)",
+    "location": "POLAND",
+    "category": "Construction",
+    "type": "FULL-TIME",
+    "salary": "4700-6200 PLN (NET)",
+    "duration": "1-3 Years",
+    "processingTime": "75 - 90 Working Days",
+    "visaType": "Initial Work visa One year",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "Factories Warehouses",
+    "location": "DENMARK",
+    "category": "Construction",
+    "type": "FULL-TIME",
+    "salary": "3800-7300 PLN",
+    "duration": "1-3 Years",
+    "processingTime": "75 - 90 Working Days",
+    "visaType": "Initial Work visa One year",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "title": "Product Workers (Fish)",
+    "location": "POLAND",
+    "category": "Construction",
+    "type": "FULL-TIME",
+    "salary": "21 PLN PER HOUR (Payment MONTHLY)",
+    "schedule": "(5DAYS/WEEK from 04AM - 02PM)",
+    "duration": "1-3 Years",
+    "featured": false
+  }
+]

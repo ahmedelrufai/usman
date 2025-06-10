@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { LocateFixedIcon } from "lucide-react";
 import React from "react";
+import { redirectToWhatsApp } from "@/helper";
 
 interface LocationCardProps {
   location: string;
@@ -148,7 +149,13 @@ const StudyCities: React.FC = () => {
       </div>
 
       <div className="w-full">
-        <Button label="Talk to our Agent" className="mx-auto " />
+        <Button
+          label="Talk to our Agent"
+          className="mx-auto"
+          onClick={() => {
+            redirectToWhatsApp();
+          }}
+        />
       </div>
     </div>
   );
