@@ -101,24 +101,24 @@ export default function JobBoard() {
       <div className="min-h-screen">
         {/* Header */}
         <div className="">
-          <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="max-w-7xl mx-auto px-2 py-6">
             <div className="mb-8">
               <div className="flex flex-col justify-center items-center gap-8 mb-6">
                 <SecondaryButton
                   label="Job Offers Abroad"
                   variant="secondary"
                 />
-                <Title> Find Your Dream Job</Title>
+                <Title>Find Your Dream Job</Title>
               </div>
 
               {/* Search Bar */}
-              <div className="relative flex flex-col md:flex-row max-w-3xl mx-auto">
+              <div className="relative flex flex-col md:flex-row max-w-3xl mx-auto max-md:gap-3">
                 <div className="relative flex-1">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                   <input
                     type="text"
                     placeholder="Search by job title, or skill"
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 border-r-0 rounded-full rounded-tr-none  rounded-br-none focus:outline-0"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 md:border-r-0 rounded-full md:rounded-tr-none  md:rounded-br-none focus:outline-0"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
@@ -128,12 +128,12 @@ export default function JobBoard() {
                   <input
                     type="text"
                     placeholder="Country"
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 border-l-0 rounded-full rounded-tl-none rounded-bl-none focus:outline-0"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 md:border-l-0 rounded-full md:rounded-tl-none md:rounded-bl-none focus:outline-0"
                     value={countryFilter}
                     onChange={(e) => setCountryFilter(e.target.value)}
                   />
                 </div>
-                <button className="absolute top-[7px] right-[7px] bg-blue text-white text-sm font-medium py-2 px-4 rounded-full transition-colors cursor-pointer">
+                <button className="md:absolute top-[7px] right-[7px] bg-blue text-white text-sm font-medium py-2 max-md:py-4 px-4 rounded-full transition-colors cursor-pointer">
                   Search
                 </button>
               </div>
@@ -159,7 +159,7 @@ export default function JobBoard() {
         </div>
 
         {/* Job Listings */}
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl mx-auto px-2 py-8">
           <h2 className="text-4xl font-medium text-gray-900 my-6 text-center">
             Available Job Listings
           </h2>

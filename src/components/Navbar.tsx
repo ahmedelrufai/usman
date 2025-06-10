@@ -269,7 +269,16 @@ const Navbar = () => {
             </button>
 
             <button
-              onClick={() => handleMobileNavigation("/become-an-agent")}
+              onClick={() => handleMobileNavigation("/about-us")}
+              className="text-left text-secondary-black font-medium py-3 px-2 border-b border-gray-100 hover:bg-gray-50 rounded transition-colors"
+            >
+              About us
+            </button>
+
+            <button
+              onClick={() =>
+                window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+              }
               className="text-left text-secondary-black font-medium py-3 px-2 border-b border-gray-100 hover:bg-gray-50 rounded transition-colors"
             >
               Become an Agent
