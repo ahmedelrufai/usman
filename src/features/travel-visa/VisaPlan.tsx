@@ -117,7 +117,7 @@ const VisaPlan = () => {
               hideOnMobile={false}
               label={"Get Started Now"}
               onClick={() =>
-                window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+                window.open("https://forms.zohopublic.com/arjunglobal/form/ExpertConsultation/formperma/jSoQBm4p_6txtYEWvrVPWWRigXfzvzEM6Ba7cLtDONk", "_blank")
               }
               className="py-3.5 px-10 border-2 border-[#ffa704]"
             />

@@ -193,7 +193,7 @@ const Navbar = () => {
 
           <button
             onClick={() =>
-              window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+              window.open("https://forms.zohopublic.com/arjunglobal/form/ExpertConsultation/formperma/jSoQBm4p_6txtYEWvrVPWWRigXfzvzEM6Ba7cLtDONk", "_blank")
             }
             className={`${
               pathname === "/become-an-agent"
@@ -277,7 +277,7 @@ const Navbar = () => {
 
             <button
               onClick={() =>
-                window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+                window.open("https://forms.zohopublic.com/arjunglobal/form/ExpertConsultation/formperma/jSoQBm4p_6txtYEWvrVPWWRigXfzvzEM6Ba7cLtDONk", "_blank")
               }
               className="text-left text-secondary-black font-medium py-3 px-2 border-b border-gray-100 hover:bg-gray-50 rounded transition-colors"
             >

@@ -10,13 +10,13 @@ const team = [
     name: "Juma Siddig Juma",
     title: "Co-Founder & Operations Manager – Kampala Main Office",
     desc: "A visionary leader and strategic operations expert who oversees the comprehensive day-to-day management of our flagship Kampala headquarters.\n\nWith extensive experience in business development and operational excellence, Juma drives organizational growth through innovative process optimization and strategic planning initiatives.\n\nHis leadership encompasses cross-departmental coordination, resource allocation, performance monitoring, and the implementation of scalable operational frameworks that support our expanding presence across East Africa.\n\nJuma's commitment to operational efficiency and team development has been instrumental in establishing our company's reputation for reliability and professional excellence in the region.",
-    img: "/images/team/ousmane.jpg",
+    img: "/images/team/juma.jpg",
   },
   {
     name: "Ousmane Mahamat Oumar",
     title: "Co-Founder & Managing Director – Abuja Office",
     desc: "A dynamic business leader and strategic visionary who spearheads our West and Central African operations from our key Abuja regional headquarters.\n\nWith deep expertise in market expansion and regional business development, Ousmane leads comprehensive initiatives focused on strategic partnerships, regulatory compliance, and exceptional client service delivery across diverse markets.\n\nHis leadership encompasses the development of market entry strategies, establishment of key stakeholder relationships, navigation of complex regulatory environments, and the cultivation of long-term client partnerships that drive sustainable growth.\n\nOusmane's proven track record in building robust business networks and his commitment to excellence have positioned our organization as a trusted partner throughout the West and Central African business landscape.",
-    img: "/images/team/juma.jpg",
+    img: "/images/team/ousmane.jpg",
   },
   {
     name: "Akampurira Bronia",

@@ -292,7 +292,7 @@ const StudyAbroad: React.FC = () => {
         label="Book Your Ticket Now"
         className="mx-auto"
         onClick={() =>
-          window.open("https://survey.zohopublic.com/zs/uDCIrB", "_blank")
+          window.open("https://forms.zohopublic.com/arjunglobal/form/ExpertConsultation/formperma/jSoQBm4p_6txtYEWvrVPWWRigXfzvzEM6Ba7cLtDONk", "_blank")
         }
       />
     </Container>

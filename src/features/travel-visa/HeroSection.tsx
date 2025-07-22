@@ -137,7 +137,7 @@ const HeroSection = () => {
                 label="Get a Free Consultation"
                 onClick={() =>
                   window.open(
-                    "https://survey.zohopublic.com/zs/uDCIrB",
+                    "https://forms.zohopublic.com/arjunglobal/form/ExpertConsultation/formperma/jSoQBm4p_6txtYEWvrVPWWRigXfzvzEM6Ba7cLtDONk",
                     "_blank"
                   )
                 }
