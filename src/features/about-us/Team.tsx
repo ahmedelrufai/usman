@@ -50,6 +50,13 @@ const team = [
     desc: "A Senior Customer Manager who plays a vital role in coordinating complex international trade operations and enhancing operational efficiency across our East Asian business networks.\n\nWith comprehensive experience in Chinese market dynamics, international shipping protocols, and supply chain management, Wang TingTing ensures seamless coordination of trade logistics that connect Asian markets with our global operations.\n\nHer expertise includes managing shipping documentation, coordinating with freight forwarders and customs brokers, optimizing supply chain routes, ensuring compliance with international trade regulations, and developing strategic partnerships with key logistics providers.\n\nWang TingTing's deep understanding of East Asian business culture and her meticulous approach to logistics coordination have been instrumental in establishing efficient trade corridors that reduce costs, minimize delays, and enhance our clients' competitive advantage in international markets.",
     img: "/images/team/salah.jpg",
   },
+  {
+    name: "Abdallah Mahamat",
+    title: "Technical Team Manager",
+    desc: "A highly skilled Technical Team Manager with extensive experience in leading cross-functional engineering teams and delivering innovative technology solutions. \n\nHe specializes in managing complex technical projects, streamlining development processes, and ensuring seamless collaboration between developers, designers, and stakeholders. \n\nWith a strong background in software engineering and team leadership, Abdallah focuses on driving technical excellence, mentoring team members, and implementing best practices that enhance productivity and product quality. \n\nHis leadership has been instrumental in aligning technical strategies with business goals, fostering innovation, and delivering solutions that scale effectively to meet organizational needs.",
+    img: "/images/team/abdallah.jpg",
+  }
+  ,
 ];
 
 const Team = () => {
