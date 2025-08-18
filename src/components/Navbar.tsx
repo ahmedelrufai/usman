@@ -285,7 +285,7 @@ const Navbar = () => {
             </button>
 
             <button
-              onClick={() => handleMobileNavigation("/contact")}
+              onClick={redirectToWhatsApp}
               className="flex items-center justify-center bg-primary-orange hover:bg-yellow-600 text-white px-6 py-3 rounded-full mt-4 transition-colors"
             >
               <FaWhatsapp className="mr-2" size={20} />
